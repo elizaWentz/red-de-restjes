@@ -1,0 +1,413 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-size:16px;
+}
+
+@font-face
+{
+    font-family: 'Avenir-Next-Condensed-Heavy';
+    src: url('../css/fonts/AvenirNextCondensed-Heavy.otf');
+}
+
+@font-face
+{
+    font-family: 'Avenir-Next-Condensed-bold';
+    src: url('../css/fonts/AvenirNextCondensed-Bold.otf');
+}
+
+@font-face
+{
+    font-family: 'Avenir-Next-Condensed-Medium';
+    src: url('../css/fonts/AvenirNextCondensed-Medium.otf');
+}
+
+@font-face
+{
+    font-family: 'Avenir-Next-Condensed-Regular';
+    src: url('../css/fonts/AvenirNextCondensed-Regular.otf');
+}
+
+body{
+    background: hsl(46 86.7% 94.1%);
+    font-family: 'Avenir-Next-Condensed-Bold';
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header ul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header li{
+    padding: 0.5em 1.2em;
+    border-top-style:solid;
+    border-color: hsl(46 36.4% 70.4%);
+    list-style: none;
+    
+}
+
+li.active a{
+    border-bottom:solid 0.1em hsl(86 54.2% 51.2%);
+    border-width: 0.1em;
+    font-family: 'Avenir-Next-Condensed-Medium';
+    animation: line 500ms ease-in-out;
+}
+
+@keyframes line{
+    0%{
+        border-width: 0em;
+    }
+
+    50%{
+        border-width: 0.05em;
+    }
+
+    100%{
+        border-width:0.1em;
+    }
+}
+
+header a{
+    text-decoration: none;
+    color: hsl(0 0% 9%);
+    font-family: 'Avenir-Next-Condensed-Regular';
+    transition: all 500ms ease;
+}
+
+header a img, footer a img{
+    display: block;
+    margin: 0.3em auto auto auto;
+    padding: 0.4em;
+    width: 6.5rem;
+}
+
+main{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1{
+    padding: 0 2em 0 2em;
+    margin-bottom: 0;
+    color: hsl(203 100% 33.9%);
+    font-family: 'Avenir-Next-Condensed-Heavy', sans-serif;
+    font-size: 1.4em;
+    line-height: 1em;
+}
+
+h2{
+    margin: 0.1em 0 0.5em 0.8em;
+
+    font-family: 'Avenir-Next-Condensed-Heavy', sans-serif;
+    text-align:left;
+    font-size:2.3em;
+    line-height: 1em;
+}
+
+main h2{
+    color: hsl(203 100% 33.9%);
+}
+
+.firsth2{
+    margin:0;
+    margin-top: 0.1em;
+    text-align:center;
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bralternative{
+    margin: 0 0.5em 0 0.8em;
+}
+
+p{
+    padding:1em 2em 0 2em;
+    font-family: 'Avenir-Next-Condensed-Medium', sans-serif;
+}
+
+main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
+
+h4{
+    padding-top: 1em;
+    margin-top: 2em;
+    margin-bottom:0.5em;
+    
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+main a, article a{
+    display: block;
+    margin:0 auto 1em auto;
+    padding: 0.2em;
+    width:4.5em;
+    border:solid 0.1em hsl(203 100% 33.9%);
+    border-radius: 0.3em;
+
+    
+    color: hsl(86 54.2% 51.2%);
+    font-size: 1.3em;
+    text-align: center;
+
+    text-decoration: none;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding:1.5em 0;
+    
+    background: hsl(203 100% 33.9%);
+}
+
+article img{
+    max-width: 100%;
+}
+
+img[src="images/fruitarticle.jpg"]{
+    margin:2em 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+article h2{
+    
+    color: hsl(86 54.2% 51.2%);
+}
+
+article p{
+    color: white;
+    text-align:justify;
+}
+
+article a{
+    border:solid 0.1em hsl(86 54.2% 51.2%);
+    color: white;
+    margin-bottom: 1em;
+}
+
+.secondpagemain{
+    display: flex;
+    text-align: left;
+}
+
+
+
+.secondpagemain img{
+    margin:0;
+    width: 10rem;
+}
+
+.secondpagemain article{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    background: none;
+}
+
+.secondpagemain section{
+    margin:0;
+    padding: 0 1em;
+    
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+.secondpagemain section h3{
+    padding-top: 0;
+    text-align: left;
+    color:hsl(86 54.2% 51.2%);
+    font-size: 1.4em;
+}
+
+.secondpagemain section p{
+    margin-bottom:0.5em;
+    padding:0;
+    
+    color:hsl(0 0% 9%);
+    letter-spacing: -0.3px;
+}
+
+.secondpagemain article:last-of-type{
+    flex-direction:row-reverse;
+}
+
+article section{
+    margin:0 1em;
+    padding:1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article section p{
+    margin: 0;
+    padding: 1em;
+    line-height:1em;
+    
+    
+}
+
+section p b{
+    font-family: 'Avenir-Next-Condensed-Bold', sans-serif;
+}
+
+summary::marker {
+    color:hsl(46 86.7% 94.1%);
+}
+
+details{
+    margin:1em 2em;
+    padding:0.5em;
+    max-height: 3em;
+    background-color: hsl(46 52.6% 81%);
+    border-radius: 0.3em;
+    font-family: 'Avenir-Next-Condensed-Medium', sans-serif;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+details[open] {
+    max-height: 25em;
+}
+
+
+.articlereverse details p{
+    margin-top:0.5em;
+    padding:0.5em 1em;
+    
+    font-size: 1em;
+    text-align: left;
+}
+
+.articlereverse details h3{
+    color:hsl(0 0% 9%);
+}
+
+details a{
+    all:unset;
+    color: -webkit-link;
+    text-decoration: underline;
+}
+
+a[href="https://apps.apple.com/nl/app/too-good-to-go-end-food-waste/id1060683933?l=en-GB"],
+a[href="https://play.google.com/store/apps/details?id=com.app.tgtg&pcampaignid=web_share"]{
+    
+    padding:0.5em;
+    border:none;
+    width: fit-content;
+}
+
+a img{
+    width: min-content;
+}
+
+article h3, article ul {
+    display: flex;
+    padding-top:1em;
+
+    color: white;
+    line-height: 1.5em;
+}
+
+article h3{
+    justify-content: center;
+}
+
+article ul{
+    flex-direction:column;
+    justify-content: left;
+    align-self: center;
+    
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.articlereverse{
+    background:none;
+}
+
+.articlereverse h2{
+    color: hsl(203 100% 33.9%);
+}
+
+.articlereverse section{
+    padding: 0 1.3em 0.4em 1.3em;
+    margin:0;
+    gap:1em;
+}
+
+.articlereverse p{
+    font-family: 'Avenir-Next-Condensed-Regular';
+    color:hsl(0 0% 9%);
+}
+
+figcaption{
+    
+    color: hsl(86 54.2% 51.2%);
+}
+
+.sectionlogos{
+    justify-content: center;
+    padding: 0.5em 1.3em;
+    margin:0;
+    gap:1em;
+}
+
+.sectionlogos img{
+    width: 4em;
+}
+
+footer{
+    margin:0.1em;
+    padding: 1em;
+    height:3em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer img{
+    margin:0;
+}
+
+footer p{
+    padding:0.5em 0 0 0;
+    margin:0;
+    align-items: center;
+    font-size: 0.8em;
+}
